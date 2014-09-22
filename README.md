@@ -2,7 +2,8 @@ delay_shield
 ============
 
 This PHP library periodically delays HTTP requests using a special cookie and responses a count back interface during delay time.
-
+It is an ideal solution for shareware or demo subscriptions. You can notify you users it is demo. You force to read the message until the delay time ended.
+After it they can use the web application until the open session is not expired.
 
 ## Install
 
@@ -21,7 +22,9 @@ On your file that you want to protect. (eg. the most common is index.php)
 <?php
 // ... your code is here, that bootstrap your application
 // ... delay_shield settings (see Configuration).
-include('delay_shield/delay_shield.php');
+$is_open = include('delay_shield/delay_shield.php');
+// use $is_open boolean variable to decide if the server
+// keep on responding. At this point the count back page is printed out.
 // ... and more code is here, that would generate
 // the main content that you want to protect
 ?>
@@ -30,8 +33,31 @@ include('delay_shield/delay_shield.php');
 ## Configuration
 
 All the settings must be defined before the include the delay_shield.php file.
-You should define a SECRET_KEY constant. It should be a string that contains random characters. The more complex string, the better.
 
+### DELAY_SHIELD_SECRET_KEY
+
+You should define a DELAY_SHIELD_SECRET_KEY constant. It should be a string that contains random characters. The more complex string, the better.
+This constant is mandatory.
+
+```php
+define('DELAY_SHIELD_SECRET_KEY', 'VeRyComPlEX5ECR3Tk3y....#####$$$$%%%%....');
 ```
-define('SECRET_KEY', 'VeRyComPlEX5ECR3Tk3y....#####$$$$%%%%....');
+
+### DELAY_SHIELD_DELAY_IN_SECONDS
+
+Optional integer constant. It defines the time in seconds your user have to wait for the real content.
+Default value: 20
+
+```php
+define('DELAY_SHIELD_DELAY_IN_SECONDS', 20);
 ```
+
+### DELAY_SHIELD_OPEN_IN_SECONDS
+
+Optional integer constant. It defines the time in seconds your user can browse without any delay. Every open session opens after after a delay session.
+Default value: 120
+
+```php
+define('DELAY_SHIELD_OPEN_IN_SECONDS', 120);
+```
+
