@@ -22,7 +22,8 @@ On your file that you want to protect. (eg. the most common is index.php)
 // ... your code is here, that bootstrap your application
 // ... delay_shield settings (see Configuration).
 include('delay_shield/delay_shield.php');
-// ... and more code is here, that would generate the main content that you want to protect
+// ... and more code is here, that would generate
+// the main content that you want to protect
 ?>
 ```
 
