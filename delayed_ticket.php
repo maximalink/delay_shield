@@ -17,11 +17,11 @@ class DelayedTicket {
   }
 
   protected function delay() {
-    return((defined('DELAY_SHIELD_DELAY_IN_SECONDS')) ? DELAY_SHIELD_DELAY_IN_SECONDS : 20);
+    return(DELAY_SHIELD_DELAY_IN_SECONDS);
   }
 
   protected function valid_seconds() {
-    return((defined('DELAY_SHIELD_OPEN_IN_SECONDS')) ? DELAY_SHIELD_OPEN_IN_SECONDS : 120);
+    return(DELAY_SHIELD_OPEN_IN_SECONDS);
   }
 
   protected function active_from() {
