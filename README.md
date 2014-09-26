@@ -61,3 +61,39 @@ Default value: 120
 define('DELAY_SHIELD_OPEN_IN_SECONDS', 120);
 ```
 
+### DELAY_SHIELD_BRAND_LEFT
+
+Optional string constant. It defines the brand that show on the left of navbar.
+It has no default value.
+
+```php
+define('DELAY_SHIELD_BRAND_LEFT', 'MyCompany');
+```
+
+### DELAY_SHIELD_BRAND_RIGHT
+
+Optional string constant. It defines the brand that show on the left of navbar.
+It has no default value.
+
+```php
+define('DELAY_SHIELD_BRAND_LEFT', 'MyWebApp');
+```
+
+### DELAY_SHIELD_MESSAGE
+
+Optional but recommended string constant. It defines the message that shows up on counter page.
+Default value: 'You have been delayed. See the counter and click the button.'
+
+```php
+define('DELAY_SHIELD_MESSAGE', 'Your credit card has been expired. Please renew it as soon as possible.');
+```
+
+### DELAY_SHIELD_CLOSE_BUTTON
+
+Optional string constant. It defines the label of close button.
+Default value: 'Close and continue >>'
+
+```php
+define('DELAY_SHIELD_CLOSE_BUTTON', 'Close the message');
+```
+
