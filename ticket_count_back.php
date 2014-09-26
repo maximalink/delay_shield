@@ -40,6 +40,21 @@
   </script>
 </head>
 <body>
+    <div class="header">
+      <div class="navbar navbar-default navbar-inverse navbar-static-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <? if (defined('DELAY_SHIELD_BRAND_LEFT')) { ?>
+              <a class="navbar-brand" href="#" class="pull-left"><?= DELAY_SHIELD_BRAND_LEFT ?></a>
+            <? } ?>
+            <? if (defined('DELAY_SHIELD_BRAND_RIGHT')) { ?>
+              <a class="navbar-brand" class="pull-right" style="float: right;"  href="#"><?= DELAY_SHIELD_BRAND_RIGHT ?></a>
+            <? } ?>
+         </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-12">
