@@ -1,5 +1,7 @@
 <?php
 
+include('config.php');
+
 if (!defined('DELAY_SHIELD_SECRET_KEY')) {
   throw new Exception('There is no DELAY_SHIELD_SECRET_KEY defined. Please define it before use delay_shield.php');
 }
