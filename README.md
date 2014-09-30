@@ -11,7 +11,7 @@ Go to install derectory. And clone the repostitory. If you want to use it in mor
 
 ```bash
 cd /usr/share/php
-git clone https://github.com/nyjt/delay_shield
+git clone https://github.com/maximalink/delay_shield
 ```
 
 ## Usage
