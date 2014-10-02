@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html ng-app="backCounter">
 <head>
+  <meta charset='UTF-8' />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
