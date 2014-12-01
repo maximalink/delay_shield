@@ -18,7 +18,7 @@ class EncryptedCookie {
   }
 
   public function set_encrypted_cookie() {
-     setcookie($this->name, $this->signed_value($this->value));
+    setcookie($this->name, $this->signed_value($this->value), time() + DELAY_SHIELD_OPEN_IN_SECONDS + DELAY_SHIELD_DELAY_IN_SECONDS);
   }
 
   public function signature($value = null) {
